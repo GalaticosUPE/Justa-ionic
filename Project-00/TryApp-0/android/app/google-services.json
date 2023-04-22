@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "145594842029",
+    "project_id": "tentativa-1-lpi",
+    "storage_bucket": "tentativa-1-lpi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145594842029:android:5974bbf3164ea34077bf24",
+        "android_client_info": {
+          "package_name": "Justa.Galactus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145594842029-lfak2ce4pv7sh32s644mt1rnfv0t0hgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT0CMGxQz81sD1lM-3GIj231v2Mw8Fc6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145594842029-lfak2ce4pv7sh32s644mt1rnfv0t0hgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
