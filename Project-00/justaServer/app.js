@@ -16,6 +16,10 @@ app.use(cors({
     origin: '*' 
 }));
 
+app.get('/', (req, res) => {
+    res.send('Olá, mundo!')
+  })
+
 app.use('/vendas', rotaVendas);
 app.use('/recebiveis', rotaRecebiveis);
 app.use('/users', rotaUsers);
