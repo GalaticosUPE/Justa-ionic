@@ -25,7 +25,7 @@ export class RecebiveisPage implements OnInit {
 
 
   obterVendadoServidor() {
-    this.http.get('http://localhost:8000/vendas')
+    this.http.get('http://15.229.69.12:8000/vendas')
       .subscribe((response: any) => {
         //O quanto o usuário "Arthur" pode adiantar
         this.adiantar= response.VendasArthur[12].valor
@@ -33,7 +33,7 @@ export class RecebiveisPage implements OnInit {
   }
 
   saldoEmConta(){
-    this.http.get('http://localhost:8000/users')
+    this.http.get('http://15.229.69.12:8000/users')
     .subscribe((response:any)=>{
       //pegando o saldo do usuário "Arthur"
       this.saldo = response.Users[2].saldo;
@@ -41,7 +41,7 @@ export class RecebiveisPage implements OnInit {
   }
 
   qtdDeVendas(){
-    this.http.get('http://localhost:8000/vendas')
+    this.http.get('http://15.229.69.12:8000/vendas')
     .subscribe((response:any)=>{
       this.qtdvendas = response.VendasArthur[12].vendas;
       if (this.qtdvendas >= 1 && this.qtdvendas <= 4) {

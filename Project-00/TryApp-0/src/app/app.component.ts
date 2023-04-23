@@ -27,7 +27,7 @@ export class AppComponent {
 
 
   obterNomeDoServidor() {
-    this.http.get('http://localhost:8000/users') // Faz a requisição HTTP para o servidor
+    this.http.get('http://15.229.69.12:8000/users') // Faz a requisição HTTP para o servidor
       .subscribe((response: any) => {
         // Escolhendo o usuário "Arthur"
         this.nome = response.Users[2].nome;
