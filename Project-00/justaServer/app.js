@@ -13,7 +13,7 @@ const port = 8000;
 
 // Dando a permissão
 app.use(cors({
-    origin: 'http://localhost:8100' 
+    origin: '*' 
 }));
 
 app.use('/vendas', rotaVendas);
