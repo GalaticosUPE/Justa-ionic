@@ -30,7 +30,7 @@ export class AppComponent {
     this.http.get('http://localhost:8000/users') // Faz a requisição HTTP para o servidor
       .subscribe((response: any) => {
         // Escolhendo o usuário "Arthur"
-        this.nome = response.Users[2].nome;
+        this.nome = response.Users[1].nome;
       });
   }
 
