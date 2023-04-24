@@ -33,7 +33,7 @@ export class AppComponent {
   }
   
   obterNomeDoServidor(selectedValue: number) {
-    this.http.get('http://localhost:8000/users')
+    this.http.get('http://15.229.117.8:8000/users')
       .subscribe((response: any) => {
         // Escolhendo o usuário selecionado
         this.nome = response.Users[selectedValue].nome;

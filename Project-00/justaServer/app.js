@@ -13,8 +13,14 @@ const port = 8000;
 
 // Dando a permissão
 app.use(cors({
-    origin: 'http://localhost:8100' 
+    origin: '*' 
 }));
+
+
+app.get('/', (req, res) => {
+    res.send('Justa Galactus Funcionando!')
+  })
+
 
 app.use('/vendas', rotaVendas);
 app.use('/recebiveis', rotaRecebiveis);

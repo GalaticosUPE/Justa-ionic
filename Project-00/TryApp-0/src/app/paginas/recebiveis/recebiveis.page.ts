@@ -47,7 +47,7 @@ export class RecebiveisPage implements OnInit {
   }
 
   async mudandoDadosUsuario(selectedValue: string) {
-    const response:any = await this.http.get('http://localhost:8000/vendas').toPromise();
+    const response:any = await this.http.get('http://15.229.117.8:8000/vendas').toPromise();
     switch (selectedValue) {
       case '0':
         this.num = 0;
@@ -89,7 +89,7 @@ export class RecebiveisPage implements OnInit {
 
 
   saldoEmConta(num: number){
-    this.http.get('http://localhost:8000/users')
+    this.http.get('http://15.229.117.8:8000/users')
     .subscribe((response:any)=>{
       //pegando o saldo do usuário "Arthur"
       this.saldo = response.Users[this.num].saldo;
