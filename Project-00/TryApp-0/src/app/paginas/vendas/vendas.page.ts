@@ -41,7 +41,7 @@ export class VendasPage implements OnInit {
 
   ngOnInit() {
     const selectedValue = this.cookieService.get('selectedValue');
-    if (selectedValue) {
+    if (selectedValue) {prompt(selectedValue)
 
       this.mudandoDadosUsuario(Number(selectedValue));
       this.obterVendadoServidor3(this.nomeDoUsuario);
