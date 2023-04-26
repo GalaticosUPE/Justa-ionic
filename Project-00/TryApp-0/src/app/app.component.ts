@@ -18,9 +18,9 @@ let selectedValue: number = 0
 export class AppComponent {
   public nome: any[] = [];
   public appPages = [
-    { title: 'Vendas', url: '/vendas', icon: 'receipt' },
-    { title: 'Empréstimos', url: '/emprestimos', icon: 'cash' },
-    { title: 'Recebíveis', url: '/recebiveis', icon: 'wallet' },
+    { title: 'Dashboard', url: '/vendas', icon: 'receipt' },
+    { title: 'Envio', url: '/emprestimos', icon: 'cash' },
+    { title: 'Admin', url: '/recebiveis', icon: 'wallet' },
   ];
  
 
@@ -33,7 +33,7 @@ export class AppComponent {
   }
   
   obterNomeDoServidor(selectedValue: number) {
-    this.http.get('http://localhost:8000/users')
+    this.http.get('http://15.229.117.8:8000/users')
       .subscribe((response: any) => {
         // Escolhendo o usuário selecionado
         this.nome = response.Users[selectedValue].nome;

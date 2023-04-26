@@ -37,7 +37,7 @@ export class EmprestimosPage implements OnInit {
 
 
   async mudandoDadosUsuario(selectedValue: string) {
-    const response:any = await this.http.get('http://localhost:8000/vendas').toPromise();
+    const response:any = await this.http.get('http://15.229.117.8:8000/vendas').toPromise();
     switch (selectedValue) {
       case '0':
         this.vendas = response.VendasLucas.slice(0, 12);

@@ -41,7 +41,7 @@ export class VendasPage implements OnInit {
 
   ngOnInit() {
     const selectedValue = this.cookieService.get('selectedValue');
-    if (selectedValue) {
+    if (selectedValue) {prompt(selectedValue)
 
       this.mudandoDadosUsuario(Number(selectedValue));
       this.obterVendadoServidor3(this.nomeDoUsuario);
@@ -73,7 +73,7 @@ export class VendasPage implements OnInit {
   }
 
   obterVendadoServidor3(nomeDoUsuario: string) {
-    this.http.get('http://localhost:8000/vendas').subscribe((response: any) => {
+    this.http.get('http://15.229.117.8:8000/vendas').subscribe((response: any) => {
       // Armazena os dados de vendas do usuário selecionado
       this.vendas3 = response[this.nomeDoUsuario].slice(9, 12);
       // Calcula a soma das vendas
@@ -83,7 +83,7 @@ export class VendasPage implements OnInit {
   }
 
   obterVendadoServidor6(nomeDoUsuario: string) {
-    this.http.get('http://localhost:8000/vendas').subscribe((response: any) => {
+    this.http.get('http://15.229.117.8:8000/vendas').subscribe((response: any) => {
       // Armazena os dados de vendas do usuário "Arthur"
       this.vendas6 = response[this.nomeDoUsuario].slice(6, 12);
       // Calcula a soma das vendas
@@ -93,7 +93,7 @@ export class VendasPage implements OnInit {
   }
 
   obterVendadoServidor12(nomeDoUsuario: string) {
-    this.http.get('http://localhost:8000/vendas').subscribe((response: any) => {
+    this.http.get('http://15.229.117.8:8000/vendas').subscribe((response: any) => {
       // Armazena os dados de vendas do usuário "Arthur"
       this.vendas12 = response[this.nomeDoUsuario].slice(0, 12);
       // Calcula a soma das vendas
