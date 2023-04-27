@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'TryApp-0',
+  appName: 'Justa Galactus',
   webDir: 'www',
   bundledWebRuntime: false
 };
